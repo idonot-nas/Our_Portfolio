@@ -1,0 +1,285 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-photo {
+            width: 60%;
+            border-radius: 16px;
+            transition: transform 0.25s ease;
+        }
+
+        .portfolio-photo:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайту (Головна) -->
+    <header class="hero">
+        <h1>🍛💛Our Portfolio ✨🗿</h1>
+        <p>We are best friend that create awesome things together🤝</p>
+    </header>
+    <nav>
+        <button class="nav-btn active" onclick="switchPage('homeView', this)">Home 🏡</button>
+        <button class="nav-btn" onclick="switchPage('portfolioView', this)">Portfolio 🎨</button>
+        <button class="nav-btn" onclick="switchPage('likesView', this)">What we like 💜</button>
+        <button class="nav-btn" onclick="switchPage('projects', this)">Our Projects 📂</button>
+    </nav>
+
+    <!-- Основний контент: Блоки учасників -->
+    <main class="container">
+        <section id="homeView" class="page-view" style="text-align: center;">
+            <h2 style="color: rgb(64, 255, 96);">Welcome to our portfolio! 🪸💕💫☮️✈️🥥🌸</h2>
+           
+            
+            <p style="color: rgb(217, 167, 255);">We are best friends that like doing insane things 🤯</p>
+            <p style="color: rgb(217, 167, 255);">Use the buttons above to learn more about us and our work 💪</p>
+             <img class="portfolio-photo" src="4c9e0942-f577-4fbc-8131-82a69d49180a.jpg" alt="Our portfolio photo" style="display: block; margin: 0 auto;">
+        </section>
+
+        <section id="portfolioView" class="page-view" style="display: none;">
+            <h2 style="color: rgb(53, 255, 184); text-align: center;">Portfolio 🎨</h2>
+        
+            <div class="members-container">
+                <section class="member-card">
+                  <div class="avatar-member-card-1">🐋</div>
+
+                    <h2>Anastasiia Yalanska</h2>
+                
+
+                    <div class="info-block">
+                        <h3>🏆 Achievements</h3>
+                        <h4>School 🏫</h4>
+                        <h5>J.A.S. Junior Academy of Sciences</h5>
+                        <ul>
+                            <li>3rd place - Created a film about mathematician (Abraham de Moivre) J.A.S.</li>
+                            <li>3rd place in math competition J.A.S.</li>
+                            <li>3rd place in physics olympiad J.A.S.</li>
+                            <li>3rd place in biology project (about fish in Ukraine) Odessa University</li>
+                            <li>Chemestry project Poltava University</li>
+                            <li>2nd place history competition J.A.S.</li>
+                        </ul>
+                        <h4>Dance 🩰</h4>
+                        <ul>
+                            <h5>International Competitions:</h5>
+                            <li>Dance World Cup (DWC) 2026: Top 15 placement (Group)</li>
+                            <li>Dance World Cup (DWC) 2025: Top 25 placement (Group)</li>
+                            <h5>Dance World Cup Ukrainian Qualifier 2026:</h5>
+                            <li>7th place (Junior Duet/Trio Contemporary)</li>
+                            <li>5th place (Junior Small Group Contemporary)</li>
+                            <h5>National Championships (Ukraine):</h5>
+                            <li>2nd place (Junior Duet/Trio Contemporary)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="member-card">
+                   <div class="avatar-member-card-2">✨</div>
+                    <h2>Chloe Penalba</h2>
+
+                    <div class="info-block">
+                        <h3>🏆 Achievements</h3>
+                        <h4>Dance 🩰</h4>
+                        <h5>National Championships (Ukraine):</h5>
+                        <ul>
+                            <li>2nd place (Junior Solo Contemporary, Kyiv)</li>
+                            <li>1st place (Junior Solo Contemporary, Ukraine)</li>
+                            <li>3rd place (Junior Solo Contemporary, Ukraine)</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="likesView" class="page-view" style="display: none;">
+            <h2 style="color: rgb(255, 64, 179); text-align: center;">What we like 🤩</h2>
+            <p style="color: rgb(190, 168, 255); text-align: center;">Music, dance, science, programming, filming, physics and writing</p>
+
+            <div class="likes-main-wrapper">
+                <div class="likes-playlists">
+                    <h3>Our fav playlists 🎶🎧</h3>
+                    <div class="playlist-row">
+                        <div class="playlist-card">
+                            <div class="windowHeader">Anastasiia 🎧</div>
+                            <iframe
+                                src="https://open.spotify.com/embed/playlist/5iaThgTFYWtHoGE2JpmCAe"
+                                width="320"
+                                height="380"
+                                frameborder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            </iframe>
+                        </div>
+                        <div class="playlist-card">
+                            <div class="windowHeader">Chloe 🎶</div>
+                            <iframe
+                                src="https://open.spotify.com/embed/playlist/1WTQlQ6W3JpGaZ3mdOADpp"
+                                width="320"
+                                height="380"
+                                frameborder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="likes-music">
+                    <h3>Our fav singers 🎵🌠</h3>
+                    <div class="artists-container">
+                        <div class="artist-group">
+                            <p class="artist-text">Anastasiia 🗿</p>
+                            <div class="music-row">
+                                <div class="music-card">
+                                    <img src="j.webp" alt="Jennie">
+                                    <p>Jennie</p>
+                                </div>
+                                <div class="music-card">
+                                    <img src="r.jpg" alt="Rosé">
+                                    <p>Rosé</p>
+                                </div>
+                                <div class="music-card">
+                                    <img src="sb.avif" alt="Sabrina Carpenter">
+                                    <p>Sabrina Carpenter</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-group">
+                            <p class="artist-text">Chloe 🎵</p>
+                            <div class="music-row">
+                                <div class="music-card">
+                                    <img src="o r.avif" alt="Olivia Rodrigo">
+                                    <p>Olivia Rodrigo</p>
+                                </div>
+                                <div class="music-card">
+                                    <img src="a w.jpg" alt="Alex Warren">
+                                    <p>Alex Warren</p>
+                                </div>
+                                <div class="music-card">
+                                    <img src="a g.jpg" alt="Alyssa Grace">
+                                    <p>Alyssa Grace</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          <div class="likes-movies">
+    <h3>Our fav actors & movies 🎬⭐🎥</h3>
+    
+    <!-- Анастасія -->
+    <p class="artist-text">Anastasiia 🗿</p>
+    <div class="category-row">
+        <div class="category-group">
+            <span class="sub-label">Actors</span>
+            <div class="actor-row">
+                <div class="actor-card">
+                    <img src="j l.webp" alt="Jennifer Lawrence">
+                    <p>Jennifer Lawrence</p>
+                </div>
+                <div class="actor-card">
+                    <img src="e w.jpg" alt="Emma Watson">
+                    <p>Emma Watson</p>
+                </div>
+                <div class="actor-card">
+                    <img src="e s.avif" alt="Emma Stone">
+                    <p>Emma Stone</p>
+                </div>
+                <div class="actor-card">
+                    <img src="t h.avif" alt="Tom Holland">
+                    <p>Tom Holland</p>
+                </div>
+                <div class="actor-card">
+                    <img src="z.webp" alt="Zendaya">
+                    <p>Zendaya</p>
+                </div>
+            </div>
+        </div>
+        <div class="category-group">
+            <span class="sub-label">Movies</span>
+            <div class="actor-row">
+                <div class="actor-card">Spider-Man</div>
+                <div class="actor-card">The Hunger Games</div>
+                <div class="actor-card">The Devil Wears Prada</div>
+                <div class="actor-card">All Marvel Movies</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Клоу -->
+    <p class="artist-text" style="margin-top: 30px;">Chloe ✨</p>
+    <div class="category-row">
+        <div class="category-group">
+            <span class="sub-label">Actors</span>
+            <div class="actor-row">
+                <div class="actor-card">
+                    <img src="photo_5283087478535430932_y.jpg" alt="Tamara Smart">
+                    <p>Tamara Smart</p>
+                </div>
+                <div class="actor-card">
+                    <img src="photo_5283087478535430933_x.jpg" alt="Lana Condor">
+                    <p>Lana Condor</p>
+                </div>
+                <div class="actor-card">
+                    <img src="photo_5283087478535430936_y.jpg" alt="Sadie Sink">
+                    <p>Sadie Sink</p>
+                </div>
+                <div class="actor-card">
+                    <img src="photo_5283087478535430937_x.jpg" alt="Sofia Carson">
+                    <p>Sofia Carson</p>
+                </div>
+                <div class="actor-card">
+                    <img src="photo_5283087478535430938_y.jpg" alt="Momona Tamada">
+                    <p>Momona Tamada</p>
+                </div>
+            </div>
+        </div>
+        <div class="category-group">
+            <span class="sub-label">Movies</span>
+            <div class="actor-row">
+                <div class="actor-card">To All the Boys I've Loved Before</div>
+                <div class="actor-card">10 Things I Hate About You</div>
+                <div class="actor-card">Project Hail Mary</div>
+                <div class="actor-card">The Mitchells vs. the Machines</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+        <section id="projects" class="page-view" style="display: none;">
+    <h2 style="color: rgb(255, 233, 64);">Our projects 📂</h2>
+    <section class="portfolio-project-1">
+        <h3>Anastasiias projects 🗿:</h3>
+        <p><a href="https://idonot-nas.github.io/Physics-Lab/" target="_blank" rel="noopener" style="color: rgb(220, 160, 255);">Open Physics Lab</a></p>
+        <p><a href="https://drive.google.com/drive/u/0/folders/1dqtpH55xjtvW7Qp2DiiYKgZfP8_4kjF6" target="_blank" rel="noopener" style="color: rgb(0, 255, 229);">Open all diplomas in Google Drive</a></p>
+         <h3>Chloes project ✨:</h3>
+        <p><a href="https://www.wattpad.com/story/407950318?utm_source=ios&utm_medium=link&utm_content=story_info&wp_page=story_details&wp_uname=zo_zo_zoe18" target="_blank" rel="noopener" style="color: rgb(255, 213, 0);">Open Writing Project</a></p>
+    </section>
+</section>
+    </main>
+
+    <!-- Футер / Контакти -->
+    <footer>
+        <p>Anastasiias gmail: <a href="mailto:a4355138@gmail.com" style="color: rgb(191, 255, 119);">a4355138@gmail.com</a></p>
+        <p>Chloes gmail: <a href="mailto:zoep2465@gmail.com" style="color: rgb(255, 213, 27);">zoep2465@gmail.com</a></p>
+         <p>Instagram: <a href="https://www.instagram.com/i.dont.know.1503/" target="_blank" rel="noopener" style="color: blue;">@i.dont.know.1503</a></p>
+    </footer>
+
+</body>
+<script>
+    function switchPage(pageId, button) {
+        document.querySelectorAll('.page-view').forEach(function (page) {
+            page.style.display = page.id === pageId ? 'block' : 'none';
+        });
+        document.querySelectorAll('.nav-btn').forEach(function (navButton) {
+            navButton.classList.remove('active');
+        });
+        button.classList.add('active');
+    }
+</script>
+</html>

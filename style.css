@@ -1,0 +1,415 @@
+/* Загальні стилі */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right, #000000, #2b00ff);
+    color: #7560ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle, #4a3f9e, #5100ff, #b8b3e8);
+    color: rgb(246, 246, 247);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+    flex-wrap: wrap;
+    background: transparent;
+}
+
+.nav-btn {
+    border: 2px solid #6532ff;
+    border-radius: 8px;
+    padding: 11px 18px;
+    background: transparent;
+    color: #5496ed;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-btn:hover,
+.nav-btn:focus-visible {
+    background: #a88bff;
+    color: #21183d;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.nav-btn.active {
+    background: #5b4eca;
+    border-color: #cb7bdb;
+    color: #8389ff;
+}
+
+/* Основний контейнер та сторінки */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.page-view {
+    width: 100%;
+}
+
+/* Фото на головній */
+.portfolio-photo {
+    width: 60%;
+    border-radius: 16px;
+    transition: transform 0.25s ease;
+}
+
+.portfolio-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Про нас */
+.about-content {
+    width: min(800px, 100%);
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px;
+    border: 3px solid #9340ff;
+    border-radius: 12px;
+    background: rgb(30, 24, 55);
+    box-sizing: border-box;
+}
+
+/* Портфоліо учасників */
+.members-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.member-card {
+    background: rgb(30, 24, 55);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(168, 139, 255);
+    width: 400px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.member-card:hover {
+    transform: scale(1.03);
+}
+
+.member-card h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #cb7bdb;
+}
+
+.avatar-member-card-1 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;             /* Вмикаємо flex, щоб вирівняти смайлик */
+    justify-content: center;       /* Центруємо по горизонталі */
+    align-items: center;       /* Центруємо по вертикалі */
+    margin: 0 auto 10px auto;
+    font-size: 80px;           /* Розмір самого смайлика */
+    background-color: #2b224c; /* Колір фону круга (можете змінити на свій) */
+    overflow: hidden;
+}
+
+.avatar-member-card-2 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    font-size: 80px;
+    background-color: #2b224c;
+    overflow: hidden;
+}
+
+.info-block {
+    margin-top: 15px;
+    border-top: 1px solid #877dba;
+    padding-top: 10px;
+}
+
+.info-block h3 {
+    font-size: 16px;
+    color: #cb7bdb;
+    margin-bottom: 5px;
+}
+
+/* Блок "What we like" */
+.likes-main-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.likes-playlists {
+    flex: 0 1 660px;
+    width: 660px;
+    max-width: 100%;
+    background: rgba(30, 24, 55, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.likes-music {
+    flex: 1 1 480px;
+    min-width: 0;
+    margin-top: -20px;
+}
+
+.playlist-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+.playlist-card {
+    width: 100%;
+    max-width: 320px;
+    min-height: 390px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: rgb(30, 24, 55);
+    flex: 1 1 300px;
+    border: 1px solid rgba(147, 64, 255, 0.3);
+}
+
+.windowHeader {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(190, 168, 255);
+}
+
+.playlist-card iframe {
+    display: block;
+    width: 100%;
+    height: 352px;
+    margin: 0 auto;
+    border: none;
+}
+
+.music-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+.artist-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.music-card {
+    width: 140px;
+    padding: 12px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgb(30, 24, 55);
+    box-shadow: 0 4px 15px rgb(168, 139, 255);
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.music-card:hover {
+    transform: scale(1.03);
+}
+
+.music-card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.music-card p {
+    color: rgb(190, 168, 255);
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.artist-text {
+    margin: 0 0 10px;
+    color: rgb(190, 168, 255);
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Фільми та актори */
+.likes-movies {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(30, 24, 55, 0.5);
+    text-align: left;
+}
+
+.likes-movies h3 {
+    margin-top: 0;
+    color: rgb(255, 64, 179);
+}
+
+.category-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.category-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sub-label {
+    color: rgb(190, 168, 255);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.actor-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.actor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    min-height: 80px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgb(30, 24, 55);
+    box-shadow: 0 4px 15px rgb(168, 139, 255);
+    color: rgb(190, 168, 255);
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.actor-card:hover {
+    transform: scale(1.03);
+}
+
+.actor-card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.actor-card p {
+    margin: 10px 0 0;
+    color: rgb(190, 168, 255);
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Проєкти */
+.portfolio-project-1 {
+    background: rgb(30, 24, 55);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(168, 139, 255);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.portfolio-project-1 a {
+    color: #a4e1ff;
+    font-weight: bold;
+}
+
+.portfolio-project-1 a:hover {
+    color: #06d6a0;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #8c6fc7;
+    color: white;
+}
+
+footer a {
+    color: #cb7bdb;
+    text-decoration: none;
+}
+
+/* Медіазапити */
+@media (max-width: 800px) {
+    .likes-main-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .likes-playlists {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .likes-music {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .music-row {
+        flex-wrap: wrap;
+    }
+}
