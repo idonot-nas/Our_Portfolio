@@ -1,4 +1,4 @@
-A portfolio where you can see the story of two best friends. Our favourite music, films and, of course, projects and achievements. 🌠🎧🌸🗿🐦‍🔥
+A portfolio where you can see the story of two best friends. Our favourite music, films and, of course, projects and achievements. 🌠🎧🌸🗿
 
   How to use the project🗿💪
 The project features three main buttons: "Home," "Our Portfolio," "What We Love," and "Our Projects."
