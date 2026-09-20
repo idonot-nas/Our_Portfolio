@@ -1,4 +1,4 @@
-/* Загальні стилі */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: linear-gradient(to right, #000000, #2b00ff);
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Шапка */
+
 .hero {
     text-align: center;
     padding: 40px 20px;
@@ -50,7 +50,7 @@ nav {
     color: #8389ff;
 }
 
-/* Основний контейнер та сторінки */
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -63,7 +63,7 @@ nav {
     width: 100%;
 }
 
-/* Фото на головній */
+
 .portfolio-photo {
     width: 60%;
     border-radius: 16px;
@@ -74,7 +74,6 @@ nav {
     transform: scale(1.05);
 }
 
-/* Про нас */
 .about-content {
     width: min(800px, 100%);
     text-align: center;
@@ -86,7 +85,7 @@ nav {
     box-sizing: border-box;
 }
 
-/* Портфоліо учасників */
+
 .members-container {
     display: flex;
     justify-content: center;
@@ -123,12 +122,12 @@ nav {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    display: flex;             /* Вмикаємо flex, щоб вирівняти смайлик */
-    justify-content: center;       /* Центруємо по горизонталі */
-    align-items: center;       /* Центруємо по вертикалі */
+    display: flex;             
+    justify-content: center;     
+    align-items: center;       
     margin: 0 auto 10px auto;
-    font-size: 80px;           /* Розмір самого смайлика */
-    background-color: #2b224c; /* Колір фону круга (можете змінити на свій) */
+    font-size: 80px;
+    background-color: #2b224c; 
     overflow: hidden;
 }
 
@@ -157,7 +156,6 @@ nav {
     margin-bottom: 5px;
 }
 
-/* Блок "What we like" */
 .likes-main-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -168,7 +166,7 @@ nav {
     margin-top: 30px;
 }
 
-.likes-playlists {
+
     flex: 0 1 660px;
     width: 660px;
     max-width: 100%;
@@ -380,7 +378,7 @@ nav {
     color: #06d6a0;
 }
 
-/* Футер */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -393,7 +391,7 @@ footer a {
     text-decoration: none;
 }
 
-/* Медіазапити */
+
 @media (max-width: 800px) {
     .likes-main-wrapper {
         flex-wrap: wrap;
