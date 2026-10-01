@@ -1,37 +1,36 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right, #000000, #2b00ff);
-    color: #7560ff;
     margin: 0;
     padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #000000, #2b00ff);
+    color: #7560ff;
 }
 
 .hero {
-    text-align: center;
     padding: 40px 20px;
+    text-align: center;
+    color: #f6f6f7;
     background: radial-gradient(circle, #4a3f9e, #5100ff, #b8b3e8);
-    color: rgb(246, 246, 247);
 }
 
 nav {
     display: flex;
     justify-content: center;
     gap: 12px;
-    padding: 20px;
     flex-wrap: wrap;
-    background: transparent;
+    padding: 20px;
 }
 
 .nav-btn {
+    padding: 11px 18px;
     border: 2px solid #6532ff;
     border-radius: 8px;
-    padding: 11px 18px;
     background: transparent;
     color: #5496ed;
     font: inherit;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .nav-btn:hover,
@@ -72,13 +71,13 @@ nav {
 
 .about-content {
     width: min(800px, 100%);
-    text-align: center;
     margin: 0 auto;
     padding: 24px;
+    box-sizing: border-box;
     border: 3px solid #9340ff;
     border-radius: 12px;
-    background: rgb(30, 24, 55);
-    box-sizing: border-box;
+    background: #1e1837;
+    text-align: center;
 }
 
 .members-container {
@@ -88,19 +87,19 @@ nav {
     gap: 40px;
     flex-wrap: wrap;
     width: 100%;
-    box-sizing: border-box;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .member-card {
-    background: rgb(30, 24, 55);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgb(168, 139, 255);
     width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #1e1837;
+    box-shadow: 0 4px 15px #a88bff;
     text-align: left;
     transition: transform 0.3s ease;
-    box-sizing: border-box;
 }
 
 .member-card:hover {
@@ -108,35 +107,35 @@ nav {
 }
 
 .member-card h2 {
-    text-align: center;
     margin-bottom: 5px;
+    text-align: center;
     color: #cb7bdb;
 }
 
 .avatar-member-card-1,
 .avatar-member-card-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 180px;
     height: 180px;
+    margin: 0 auto 10px;
     border-radius: 50%;
-    display: flex;             
-    justify-content: center;     
-    align-items: center;       
-    margin: 0 auto 10px auto;
-    font-size: 80px;
-    background-color: #2b224c; 
+    background: #2b224c;
     overflow: hidden;
+    font-size: 80px;
 }
 
 .info-block {
     margin-top: 15px;
-    border-top: 1px solid #877dba;
     padding-top: 10px;
+    border-top: 1px solid #877dba;
 }
 
 .info-block h3 {
+    margin-bottom: 5px;
     font-size: 16px;
     color: #cb7bdb;
-    margin-bottom: 5px;
 }
 
 .likes-main-wrapper {
@@ -144,24 +143,23 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 40px;
-    flex-wrap: nowrap;
     width: 100%;
     margin-top: 30px;
 }
 
 .likes-playlists {
-    flex: 0 1 660px;
     width: 660px;
     max-width: 100%;
-    background: rgba(30, 24, 55, 0.5);
+    flex: 0 1 660px;
     padding: 20px;
-    border-radius: 12px;
     box-sizing: border-box;
+    border-radius: 12px;
+    background: rgba(30, 24, 55, 0.5);
 }
 
 .likes-music {
-    flex: 1 1 480px;
     min-width: 0;
+    flex: 1 1 480px;
     margin-top: -20px;
 }
 
@@ -169,28 +167,28 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
     width: 100%;
-    margin: 20px 0 0;
+    margin-top: 20px;
 }
 
 .playlist-card {
     width: 100%;
     max-width: 320px;
     min-height: 390px;
-    overflow: hidden;
-    border-radius: 14px;
-    background: rgb(30, 24, 55);
     flex: 1 1 300px;
+    overflow: hidden;
     border: 1px solid rgba(147, 64, 255, 0.3);
+    border-radius: 14px;
+    background: #1e1837;
 }
 
 .windowHeader {
     padding: 10px;
-    text-align: left;
+    color: #bea8ff;
     font-weight: bold;
-    color: rgb(190, 168, 255);
+    text-align: left;
 }
 
 .playlist-card iframe {
@@ -198,7 +196,7 @@ nav {
     width: 100%;
     height: 352px;
     margin: 0 auto;
-    border: none;
+    border: 0;
 }
 
 .music-row {
@@ -206,14 +204,12 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
-    flex-wrap: nowrap;
     width: 100%;
 }
 
 .artists-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     gap: 40px;
     width: 100%;
@@ -229,13 +225,13 @@ nav {
 .music-card {
     width: 140px;
     padding: 12px;
+    box-sizing: border-box;
     overflow: hidden;
     border-radius: 12px;
-    background: rgb(30, 24, 55);
-    box-shadow: 0 4px 15px rgb(168, 139, 255);
+    background: #1e1837;
+    box-shadow: 0 4px 15px #a88bff;
     text-align: center;
     transition: transform 0.3s ease;
-    box-sizing: border-box;
 }
 
 .music-card:hover {
@@ -250,17 +246,17 @@ nav {
 }
 
 .music-card p {
-    color: rgb(190, 168, 255);
-    text-align: center;
     margin: 10px 0 0;
+    color: #bea8ff;
+    text-align: center;
 }
 
 .artist-text {
-    margin: 0 0 10px;
-    color: rgb(190, 168, 255);
-    text-align: left;
-    font-weight: bold;
     width: 100%;
+    margin: 0 0 10px;
+    color: #bea8ff;
+    font-weight: bold;
+    text-align: left;
 }
 
 .likes-movies {
@@ -273,7 +269,7 @@ nav {
 
 .likes-movies h3 {
     margin-top: 0;
-    color: rgb(255, 64, 179);
+    color: #ff40b3;
 }
 
 .category-row {
@@ -292,7 +288,7 @@ nav {
 }
 
 .sub-label {
-    color: rgb(190, 168, 255);
+    color: #bea8ff;
     font-size: 14px;
     font-weight: bold;
 }
@@ -307,18 +303,18 @@ nav {
 .actor-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 140px;
     min-height: 80px;
     padding: 12px;
+    box-sizing: border-box;
     border-radius: 12px;
-    background: rgb(30, 24, 55);
-    box-shadow: 0 4px 15px rgb(168, 139, 255);
-    color: rgb(190, 168, 255);
+    background: #1e1837;
+    box-shadow: 0 4px 15px #a88bff;
+    color: #bea8ff;
     font-weight: bold;
     text-align: center;
-    box-sizing: border-box;
     transition: transform 0.3s ease;
 }
 
@@ -335,19 +331,19 @@ nav {
 
 .actor-card p {
     margin: 10px 0 0;
-    color: rgb(190, 168, 255);
-    text-align: center;
+    color: #bea8ff;
     font-weight: normal;
+    text-align: center;
 }
 
 .portfolio-project-1 {
-    background: rgb(30, 24, 55);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgb(168, 139, 255);
     width: 100%;
     max-width: 600px;
+    padding: 30px;
     box-sizing: border-box;
+    border-radius: 12px;
+    background: #1e1837;
+    box-shadow: 0 4px 15px #a88bff;
 }
 
 .portfolio-project-1 a {
@@ -360,10 +356,10 @@ nav {
 }
 
 footer {
-    text-align: center;
     padding: 20px;
     background: #8c6fc7;
     color: white;
+    text-align: center;
 }
 
 footer a {
